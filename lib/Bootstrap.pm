@@ -20,6 +20,15 @@ use Catalyst qw/
     -Debug
     ConfigLoader
     Static::Simple
+
+    StackTrace
+
+    Authentication
+    Authorization::Roles
+    
+    Session
+    Session::Store::File
+    Session::State::Cookie
 /;
 
 extends 'Catalyst';
@@ -40,6 +49,16 @@ __PACKAGE__->config(
     # Disable deprecated behavior needed by old applications
     disable_component_resolution_regex_fallback => 1,
     enable_catalyst_header => 1, # Send X-Catalyst header
+);
+
+__PACKAGE__->config(
+    # Configure the view
+    'View::HTML' => {
+        #Set the location for the TT files
+        INCLUDE_PATH => [
+            __PACKAGE__->path_to( 'root', 'src' ),
+        ],
+    },
 );
 
 # Start the application

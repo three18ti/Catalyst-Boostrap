@@ -1,0 +1,11 @@
+<div class="main">
+    <img src="[% c.uri_for('/static/images/logo_120.png') %]" alt='CyberSpace Logistics Company Logo'></img>
+    <div id="content">
+        [%# Status and error messages %]
+        <span class="message">[% status_msg %]</span>
+        <span class="error">[% error_msg %]</span>
+        [%# This is where TT will stick all of your template's contents. -%]
+        [% content %]
+    </div><!-- end content -->
+</div>
+
