@@ -8,7 +8,7 @@ unless (eval q{use Test::WWW::Mechanize::Catalyst 0.55; 1}) {
     exit 0;
 }
 
-ok( my $mech = Test::WWW::Mechanize::Catalyst->new(catalyst_app => 'Bootstrap', 'Created mech object' );
+ok( my $mech = Test::WWW::Mechanize::Catalyst->new(catalyst_app => 'Bootstrap', 'Created mech object' ));
 
 $mech->get_ok( 'http://localhost/services' );
 done_testing();

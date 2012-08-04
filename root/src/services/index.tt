@@ -1,1 +1,1 @@
-services/index.tt
+[% template.name %]
