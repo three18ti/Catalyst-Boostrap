@@ -10,10 +10,10 @@
           <div class="nav-collapse">
             <ul class="nav">
 
-              <li [%- IF template.name == 'index.tt' -%] class="active" [%- END -%]><a href="[% c.uri_for('/') %]">Home</a></li>
-              <li [%- IF template.name == 'about/index.tt' -%] class="active" [%- END -%]><a href="[% c.uri_for('/about') %]">About</a></li>
-              <li [%- IF template.name == 'services/index.tt' -%] class="active" [%- END -%]><a href="[% c.uri_for('/services') %]">Services</a></li>
-              <li [%- IF template.name == 'contact/index.tt' -%] class="active" [%- END -%]><a href="[% c.uri_for('/contact') %]">Contact</a></li>
+              <li [%- IF template.name.match('^index.tt') -%] class="active" [%- END -%]><a href="[% c.uri_for('/') %]">Home</a></li>
+              <li [%- IF template.name.match('^about') -%] class="active" [%- END -%]><a href="[% c.uri_for('/about') %]">About</a></li>
+              <li [%- IF template.name.match('^services') -%] class="active" [%- END -%]><a href="[% c.uri_for('/services') %]">Services</a></li>
+              <li [%- IF template.name.match('^contact') -%] class="active" [%- END -%]><a href="[% c.uri_for('/contact') %]">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
