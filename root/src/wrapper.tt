@@ -28,7 +28,7 @@
         
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target=".subnav" data-offset="50">
 
         [% INCLUDE 'default/menu.tt' %]
 

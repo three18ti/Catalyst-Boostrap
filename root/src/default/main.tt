@@ -1,11 +1,34 @@
 <div class="main">
-    <img src="[% c.uri_for('/static/images/logo_120.png') %]" alt='CyberSpace Logistics Company Logo'></img>
     <div id="content">
+    </div><!-- end content -->
+</div>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+        sidebar<br />
+        sadebar 2<br />
+        sadebar 3<br />
+        sadebar 4<br />
+        sadebar 5<br />
+        sadebar 6<br />
+        sadebar 7<br />
+        sadebar 8<br />
+        sadebar 9<br />
+        sadebar 10<br />
+        sadebar 11<br />
+    </div>
+    <div class="span10">
+        <!--Body content-->
+        <br />
+        <img src="[% c.uri_for('/static/images/logo_120.png') %]" alt='CyberSpace Logistics Company Logo'></img><br />
         [%# Status and error messages %]
         <span class="message">[% status_msg %]</span>
         <span class="error">[% error_msg %]</span>
         [%# This is where TT will stick all of your template's contents. -%]
         [% content %]
-    </div><!-- end content -->
+        <!-- end Body Content -->
+    </div>
+  </div>
 </div>
-
