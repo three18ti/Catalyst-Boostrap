@@ -1,1 +1,3 @@
 about/index.tt
+
+[% template.name %]
