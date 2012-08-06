@@ -24,6 +24,10 @@ Catalyst Controller.
 sub index :Path :Args(0) {
     my ( $self, $c ) = @_;
 
+    return unless $c->req->method eq 'POST';
+
+    use Data::Dumper;
+    $c->log->debug(Dumper $c->req->params);
 }
 
 

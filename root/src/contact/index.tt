@@ -1,29 +1,28 @@
-<div class="container span6">
-<form class="well form-horizontal" action="[%- c.uri_for('/contact') -%]" method="post">
+<form class="well form-horizontal" action="[%- c.uri_for('/contact') -%]" method="POST">
     <fieldset>
         <legend>Contact Us</legend>
-        <div class="control-group fluid-row">
+        <div class="control-group">
             <label class="control-label" for="name">Name</label>
             <div class="controls">
-                <input type="text" class="input-xlarge" id="name" value="Your Name (Required)">
+                <input type="text" class="input-xlarge" id="name" name="name" placeholder="Your Name (Required)">
             </div>
         </div>
         <div class="control-group">        
             <label class="control-label" for="email">E-Mail Address</label>
             <div class="controls">
-                <input type="email" class="input-xlarge" id="email" value="Your E-Mail Address (Required)" >
+                <input type="email" class="input-xlarge" id="email" name="email" placeholder="Your E-Mail Address (Required)" >
             </div>
         </div>
         <div class="control-group">        
             <label class="control-label" for="phone_number">Phone Number</label>
             <div class="controls">
-                <input type="text" class="input-xlarge" id="phone_number" value="Your Phone Number">
+                <input type="text" class="input-xlarge" id="phone_number" name="phone_number" placeholder="Your Phone Number">
             </div>
         </div>
         <div class="control-group">
             <label class="control-label" for="comment">Comments</label>
             <div class="controls">
-                <textarea class="input-xlarge" id="comment" rows="3" value="Enter your comments or questions here"></textarea>
+                <textarea class="input-xlarge" id="comment" rows="3" name="comments" placeholder="Enter your comments or questions here"></textarea>
             </div>
         </div>
         <div class="form-actions">
@@ -32,4 +31,3 @@
           </div>
     </fieldset>
 </form>
-</div>
