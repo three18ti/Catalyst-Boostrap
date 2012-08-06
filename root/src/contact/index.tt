@@ -1,1 +1,33 @@
-[% template.name %]
+<form class="well form-horizontal" action="[%- c.uri_for('/contact') -%]" method="post">
+    <fieldset>
+        <legend>Contact Us</legend>
+        <div class="control-group">
+            <label class="control-label" for="name">Name</label>
+            <div class="controls">
+                <input type="text" class="input-xlarge" id="name" value="Your Name (Required)">
+            </div>
+        </div>
+        <div class="control-group">        
+            <label class="control-label" for="email">E-Mail Address</label>
+            <div class="controls">
+                <input type="email" class="input-xlarge" id="email" value="Your E-Mail Address (Required)" >
+            </div>
+        </div>
+        <div class="control-group">        
+            <label class="control-label" for="phone_number">Phone Number</label>
+            <div class="controls">
+                <input type="text" class="input-xlarge" id="phone_number" value="Your Phone Number">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="comment">Comments</label>
+            <div class="controls">
+                <textarea class="input-xlarge" id="comment" rows="3" value="Enter your comments or questions here"></textarea>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button class="btn">Cancel</button>
+          </div>
+    </fieldset>
+</form>
