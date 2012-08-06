@@ -1,7 +1,8 @@
+<div class="container span6">
 <form class="well form-horizontal" action="[%- c.uri_for('/contact') -%]" method="post">
     <fieldset>
         <legend>Contact Us</legend>
-        <div class="control-group">
+        <div class="control-group fluid-row">
             <label class="control-label" for="name">Name</label>
             <div class="controls">
                 <input type="text" class="input-xlarge" id="name" value="Your Name (Required)">
@@ -31,3 +32,4 @@
           </div>
     </fieldset>
 </form>
+</div>
